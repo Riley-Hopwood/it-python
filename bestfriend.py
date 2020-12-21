@@ -19,7 +19,9 @@ while True:
     print(f'Get out of here! My favorite game is {game}, too')
     print('We like the same things! We should be friends!')
     print('')
-    response = input('would you like to go again? (Y/n) ')
     
+    response = input('would you like to go again? (Y/n) ')
+    while response.lowe() not in ['n', 'no', 'nope','y','yes','yep']:
+        response = input('would you like to go again? (Y/n) ')
     if response.lower() in ['n','no', 'nope', 'nu-uh']:
         break
